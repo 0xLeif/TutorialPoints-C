@@ -11,13 +11,13 @@
 
 #include <stdio.h>
 
-void basicPointerExample(void);
-void nullPointerExample(void);
-void basicPointerIncrementing(void);
-void basicPointerDecrementing(void);
-void basicPointerComparisons(void);
+void pointerExample(void);
+void pointerNullExample(void);
+void pointerIncrementing(void);
+void pointerDecrementing(void);
+void pointerComparisons(void);
 
 // Double Pointer
-void doublePointerExample(void);
+void pointerDoubleExample(void);
 
 #endif /* Pointers_h */

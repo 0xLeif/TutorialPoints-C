@@ -14,6 +14,6 @@
 typedef union Data Data;
 
 void unionSizeExample(void);
-void basicUnionExample(void);
-void basicUnionExample2(void);
+void unionCorruptedExample(void);
+void unionExample(void);
 #endif /* Unions_h */

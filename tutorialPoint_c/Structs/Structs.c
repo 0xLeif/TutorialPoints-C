@@ -8,6 +8,9 @@
 
 #include "Structs.h"
 
+/// Arrays allow to define type of variables that can hold several data items of the same kind. Similarly structure is another user defined data type available in C that allows to combine data items of different kinds.
+///
+/// Structures are used to represent a record. Suppose you want to keep track of your books in a library. You might want to track the following attributes about each book
 struct Book {
     char  title[50];
     char  author[50];
@@ -44,14 +47,14 @@ void structExample() {
     printf("Book 2 book_id : %d\n", book2.book_id);
 }
 
-void printBook(Book book) {
+void structPrintBook(Book book) {
     printf("Book title : %s\n", book.title);
     printf("Book author : %s\n", book.author);
     printf("Book subject : %s\n", book.subject);
     printf("Book book_id : %d\n", book.book_id);
 }
 
-void printBookPointer(Book *book) {
+void structPrintBookPointer(Book *book) {
     printf("Book title : %s\n", book->title);
     printf("Book author : %s\n", book->author);
     printf("Book subject : %s\n", book->subject);

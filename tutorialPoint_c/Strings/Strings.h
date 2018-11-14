@@ -11,7 +11,7 @@
 
 #include <stdio.h>
 
-void basicStringExample(void);
-void strcatStringExample(void);
+void stringExample(void);
+void stringStrcatExample(void);
 
 #endif /* Strings_h */

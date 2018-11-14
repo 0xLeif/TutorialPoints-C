@@ -9,7 +9,7 @@
 #include "Functions.h"
 
 /* function returning the max between two numbers */
-int max(int num1, int num2) {
+int functionMax(int num1, int num2) {
     
     /* local variable declaration */
     int result;
@@ -23,7 +23,7 @@ int max(int num1, int num2) {
 }
 
 /* function definition to swap the values */
-void swap(int x, int y) {
+void functionSwap(int x, int y) {
     
     int temp;
     
@@ -35,7 +35,7 @@ void swap(int x, int y) {
 }
 
 /* function definition to swap the values */
-void swap_ptr(int *x, int *y) {
+void functionSwap_ptr(int *x, int *y) {
     
     int temp;
     temp = *x;    /* save the value at address x */
@@ -43,4 +43,34 @@ void swap_ptr(int *x, int *y) {
     *y = temp;    /* put temp into y */
     
     return;
+}
+
+/*
+ Sometimes, you may come across a situation, when you want to have a function, which can take variable number of arguments, i.e., parameters, instead of predefined number of parameters. The C programming language provides a solution for this situation and you are allowed to define a function which can accept variable number of parameters based on your requirement. The following example shows the definition of such a function.
+ 
+ int func(int, ...) { }
+ 
+ int main() {
+     func(1, 2, 3);
+     func(1, 2, 3, 4);
+ }
+ */
+
+double functionAverage(int num,...) {
+    va_list valist;
+    double sum = 0.0;
+    int i;
+    
+    /* initialize valist for num number of arguments */
+    va_start(valist, num);
+    
+    /* access all the arguments assigned to valist */
+    for (i = 0; i < num; i++) {
+        sum += va_arg(valist, int);
+    }
+    
+    /* clean memory reserved for valist */
+    va_end(valist);
+    
+    return sum/num;
 }

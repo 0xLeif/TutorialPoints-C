@@ -19,36 +19,36 @@
  void myFunction(int param[]) {}
  */
 
-void basicSize10Array() {
+void arrayBasicSize10() {
     int n[ 10 ]; /* n is an array of 10 integers */
     int i,j;
     
     /* initialize elements of array n to 0 */
-    for ( i = 0; i < 10; i++ ) {
+    for (i = 0; i < 10; i++) {
         n[ i ] = i + 100; /* set element at location i to i + 100 */
     }
     
     /* output each array element's value */
-    for (j = 0; j < 10; j++ ) {
-        printf("Element[%d] = %d\n", j, n[j] );
+    for (j = 0; j < 10; j++) {
+        printf("Element[%d] = %d\n", j, n[j]);
     }
 }
 
-void basicTwoDimArray() {
+void arrayBasicTwoDim() {
     /* an array with 5 rows and 2 columns*/
     int a[5][2] = { {0,0}, {1,2}, {2,4}, {3,6},{4,8}};
     int i, j;
     
     /* output each array element's value */
-    for ( i = 0; i < 5; i++ ) {
+    for (i = 0; i < 5; i++) {
         
-        for ( j = 0; j < 2; j++ ) {
-            printf("a[%d][%d] = %d\n", i,j, a[i][j] );
+        for (j = 0; j < 2; j++) {
+            printf("a[%d][%d] = %d\n", i,j, a[i][j]);
         }
     }
 }
 
-double getAverage(int arr[], int size) {
+double arrayGetAverage(int arr[], int size) {
     
     int i;
     double avg;
@@ -63,16 +63,16 @@ double getAverage(int arr[], int size) {
     return avg;
 }
 
-void averageExample() {
+void arrayAverageExample() {
     /* an int array with 5 elements */
-    int balance[5] = {1000, 2, 3, 17, 50};
+    int balance[5] = { 1000, 2, 3, 17, 50 };
     double avg;
     
     /* pass pointer to the array as an argument */
-    avg = getAverage( balance, 5 ) ;
+    avg = arrayGetAverage(balance, 5) ;
     
     /* output the returned value */
-    printf( "Average value is: %f ", avg );
+    printf("Average value is: %f ", avg);
 }
 
 /*
@@ -85,7 +85,7 @@ void averageExample() {
  */
 
 /* function to generate and return random numbers */
-int * getRandom( ) {
+int *getRandom() {
     
     static int  r[10];
     int i;
@@ -93,24 +93,24 @@ int * getRandom( ) {
     /* set the seed */
     // Issue with line
     // TODO: Fix seeding rand()
-//    srand( (unsigned)time( NULL ) );
+//    srand((unsigned)time(NULL ));
     
-    for ( i = 0; i < 10; ++i) {
+    for (i = 0; i < 10; ++i) {
         r[i] = rand();
-        printf( "r[%d] = %d\n", i, r[i]);
+        printf("r[%d] = %d\n", i, r[i]);
     }
     
     return r;
 }
 
-void rangeExample() {
+void arrayRandExample() {
     /* a pointer to an int */
     int *p;
     int i;
     
     p = getRandom();
     
-    for ( i = 0; i < 10; i++ ) {
-        printf( "*(p + %d) : %d\n", i, *(p + i));
+    for (i = 0; i < 10; i++) {
+        printf("*(p + %d) : %d\n", i, *(p + i));
     }
 }

@@ -10,20 +10,20 @@
 
 #define MAX 3
 
-void basicArrayOfPointersExample() {
+void AOPBasicExample() {
     int  var[] = {10, 100, 200};
     int i, *ptr[MAX];
     
-    for ( i = 0; i < MAX; i++) {
+    for (i = 0; i < MAX; i++) {
         ptr[i] = &var[i]; /* assign the address of integer. */
     }
     
-    for ( i = 0; i < MAX; i++) {
-        printf("Value of var[%d] = %d\n", i, *ptr[i] );
+    for (i = 0; i < MAX; i++) {
+        printf("Value of var[%d] = %d\n", i, *ptr[i]);
     }
 }
 
-void basicCharPointerArrayExample() {
+void AOPBasicCharArrayExample() {
     char *names[] = {
         "Zara Ali",
         "Hina Ali",
@@ -32,7 +32,7 @@ void basicCharPointerArrayExample() {
     
     int i = 0;
     
-    for ( i = 0; i < MAX; i++) {
-        printf("Value of names[%d] = %s\n", i, names[i] );
+    for (i = 0; i < MAX; i++) {
+        printf("Value of names[%d] = %s\n", i, names[i]);
     }
 }

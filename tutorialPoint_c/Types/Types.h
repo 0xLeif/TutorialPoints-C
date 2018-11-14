@@ -12,7 +12,6 @@
 #include <stdio.h>
 #include <float.h>
 
-
 void basicFloatTypes(void);
 void externVariables(void);
 void constTest(void);

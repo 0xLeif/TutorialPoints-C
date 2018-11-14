@@ -10,64 +10,64 @@
 
 #define MAX 3
 
-void basicPointerExample() {
+void pointerExample() {
     int  var = 20;   /* actual variable declaration */
     int  *ip;        /* pointer variable declaration */
     
     ip = &var;  /* store address of var in pointer variable*/
     
-    printf("Address of var variable: %x\n", &var  );
+    printf("Address of var variable: %x\n", &var );
     
     /* address stored in pointer variable */
-    printf("Address stored in ip variable: %x\n", ip );
+    printf("Address stored in ip variable: %x\n", ip);
     
     /* access the value using the pointer */
-    printf("Value of *ip variable: %d\n", *ip );
+    printf("Value of *ip variable: %d\n", *ip);
 }
 
-void nullPointerExample() {
+void pointerNullExample() {
     int  *ptr = NULL;
     
-    printf("The value of ptr is : %x\n", ptr  );
+    printf("The value of ptr is : %x\n", ptr );
 }
 
 // MARK: Pointer Arithmetic
 
-void basicPointerIncrementing() {
+void pointerIncrementing() {
     int  var[] = {10, 100, 200};
     int  i, *ptr;
     
     /* let us have array address in pointer */
     ptr = var;
     
-    for ( i = 0; i < MAX; i++) {
+    for (i = 0; i < MAX; i++) {
         
-        printf("Address of var[%d] = %x\n", i, ptr );
-        printf("Value of var[%d] = %d\n", i, *ptr );
+        printf("Address of var[%d] = %x\n", i, ptr);
+        printf("Value of var[%d] = %d\n", i, *ptr);
         
         /* move to the next location */
         ptr++;
     }
 }
 
-void basicPointerDecrementing() {
+void pointerDecrementing() {
     int  var[] = {10, 100, 200};
     int  i, *ptr;
     
     /* let us have array address in pointer */
     ptr = &var[MAX-1];
     
-    for ( i = MAX; i > 0; i--) {
+    for (i = MAX; i > 0; i--) {
         
-        printf("Address of var[%d] = %x\n", i-1, ptr );
-        printf("Value of var[%d] = %d\n", i-1, *ptr );
+        printf("Address of var[%d] = %x\n", i-1, ptr);
+        printf("Value of var[%d] = %d\n", i-1, *ptr);
         
         /* move to the previous location */
         ptr--;
     }
 }
 
-void basicPointerComparisons() {
+void pointerComparisons() {
     int  var[] = {10, 100, 200};
     int  i, *ptr;
     
@@ -75,10 +75,10 @@ void basicPointerComparisons() {
     ptr = var;
     i = 0;
     
-    while ( ptr <= &var[MAX - 1] ) {
+    while (ptr <= &var[MAX - 1]) {
         
-        printf("Address of var[%d] = %x\n", i, ptr );
-        printf("Value of var[%d] = %d\n", i, *ptr );
+        printf("Address of var[%d] = %x\n", i, ptr);
+        printf("Value of var[%d] = %d\n", i, *ptr);
         
         /* point to the previous location */
         ptr++;
@@ -87,7 +87,7 @@ void basicPointerComparisons() {
 }
 
 
-void doublePointerExample() {
+void pointerDoubleExample() {
     int  var;
     int  *ptr;
     int  **pptr;
@@ -101,7 +101,7 @@ void doublePointerExample() {
     pptr = &ptr;
     
     /* take the value using pptr */
-    printf("Value of var = %d\n", var );
-    printf("Value available at *ptr = %d\n", *ptr );
+    printf("Value of var = %d\n", var);
+    printf("Value available at *ptr = %d\n", *ptr);
     printf("Value available at **pptr = %d\n", **pptr);
 }

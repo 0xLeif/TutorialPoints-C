@@ -14,7 +14,7 @@
 typedef struct Book Book;
 
 void structExample(void);
-void printBook(Book book);
-void printBookPointer(Book *book);
+void structPrintBook(Book book);
+void structPrintBookPointer(Book *book);
 
 #endif /* Structs_h */

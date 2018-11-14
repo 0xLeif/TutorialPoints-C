@@ -16,6 +16,7 @@
  
  typedef interpretation is performed by the compiler whereas #define statements are processed by the pre-processor.
  */
+
 #define TRUE  1
 #define FALSE 0
 #define PI 3.14
@@ -23,9 +24,9 @@
 // Uses float.h
 void basicFloatTypes() {
     printf("Storage size for float : %lu \n", sizeof(float));
-    printf("Minimum float positive value: %E\n", FLT_MIN );
-    printf("Maximum float positive value: %E\n", FLT_MAX );
-    printf("Precision value: %d\n", FLT_DIG );
+    printf("Minimum float positive value: %E\n", FLT_MIN);
+    printf("Maximum float positive value: %E\n", FLT_MAX);
+    printf("Precision value: %d\n", FLT_DIG);
 }
 
 extern int a, b, c;

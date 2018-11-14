@@ -11,7 +11,7 @@
 
 #include <stdio.h>
 
-void basicArrayOfPointersExample(void);
-void basicCharPointerArrayExample(void);
+void AOPBasicExample(void);
+void AOPBasicCharArrayExample(void);
 
 #endif /* ArrayOfPointers_h */

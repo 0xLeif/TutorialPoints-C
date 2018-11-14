@@ -11,9 +11,9 @@
 
 #include <stdio.h>
 
-void forLoopExample(void);
-void whileLoopExample(void);
-void doWhileLoopExample(void);
-void nestedForLoopExample(void);
+void loopForExample(void);
+void loopWhileExample(void);
+void loopDoWhileExample(void);
+void loopNestedForExample(void);
 
 #endif /* Loops_h */

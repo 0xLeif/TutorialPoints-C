@@ -8,13 +8,7 @@
 
 #include <stdio.h>
 
-#include "Types.h"
-#include "Loops.h"
-#include "Strings.h"
-#include "Pointers.h"
-#include "ArrayOfPointers.h"
-#include "Functions.h"
-#include "Arrays.h"
+#include "MainHeader.h"
 
 // Source: https://www.tutorialspoint.com/cprogramming/index.htm
 int main(int argc, const char * argv[]) {

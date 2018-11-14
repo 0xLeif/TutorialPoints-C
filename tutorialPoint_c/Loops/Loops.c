@@ -8,27 +8,27 @@
 
 #include "Loops.h"
 
-void forLoopExample() {
+void loopForExample() {
     int a;
     
     /* for loop execution */
-    for( a = 10; a < 20; a = a + 1 ){
+    for(a = 10; a < 20; a = a + 1){
         printf("value of a: %d\n", a);
     }
 }
 
-void whileLoopExample() {
+void loopWhileExample() {
     /* local variable definition */
     int a = 10;
     
     /* while loop execution */
-    while( a < 20 ) {
+    while(a < 20) {
         printf("value of a: %d\n", a);
         a++;
     }
 }
 
-void doWhileLoopExample() {
+void loopDoWhileExample() {
     /* local variable definition */
     int a = 10;
     
@@ -36,10 +36,10 @@ void doWhileLoopExample() {
     do {
         printf("value of a: %d\n", a);
         a = a + 1;
-    }while( a < 20 );
+    }while(a < 20);
 }
 
-void nestedForLoopExample() {
+void loopNestedForExample() {
     /* local variable definition */
     int i, j;
     

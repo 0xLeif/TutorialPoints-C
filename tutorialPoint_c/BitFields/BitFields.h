@@ -11,7 +11,7 @@
 
 #include <stdio.h>
 
-void memorySizeExample(void);
-void ageBitFieldExample(void);
+void bitFieldMemorySizeExample(void);
+void bitFieldAgeExample(void);
 
 #endif /* BitFields_h */

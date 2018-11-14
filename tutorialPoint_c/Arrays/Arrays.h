@@ -12,9 +12,9 @@
 #include <stdio.h>
 #include <time.h>
 
-void basicSize10Array(void);
-void basicTwoDimArray(void);
-double getAverage(int arr[], int size);
-void averageExampe(void);
+void arrayBasicSize10(void);
+void arrayBasicTwoDim(void);
+void arrayAverageExample(void);
+void arrayRandExample(void);
 
 #endif /* Arrays_h */
