@@ -16,6 +16,7 @@
 		299063A3219BCC5600B762C4 /* ArrayOfPointers.c in Sources */ = {isa = PBXBuildFile; fileRef = 299063A2219BCC5600B762C4 /* ArrayOfPointers.c */; };
 		299063A7219BCDAB00B762C4 /* Strings.c in Sources */ = {isa = PBXBuildFile; fileRef = 299063A6219BCDAB00B762C4 /* Strings.c */; };
 		299063AB219BCFAB00B762C4 /* Structs.c in Sources */ = {isa = PBXBuildFile; fileRef = 299063AA219BCFAB00B762C4 /* Structs.c */; };
+		299063AF219BD1D400B762C4 /* Unions.c in Sources */ = {isa = PBXBuildFile; fileRef = 299063AE219BD1D400B762C4 /* Unions.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -49,6 +50,8 @@
 		299063A6219BCDAB00B762C4 /* Strings.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Strings.c; sourceTree = "<group>"; };
 		299063A9219BCFAB00B762C4 /* Structs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Structs.h; sourceTree = "<group>"; };
 		299063AA219BCFAB00B762C4 /* Structs.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Structs.c; sourceTree = "<group>"; };
+		299063AD219BD1D400B762C4 /* Unions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Unions.h; sourceTree = "<group>"; };
+		299063AE219BD1D400B762C4 /* Unions.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Unions.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +87,7 @@
 				29221840219B5D800053C9A3 /* main.c */,
 				299063A4219BCD9A00B762C4 /* Strings */,
 				299063A8219BCF7F00B762C4 /* Structs */,
+				299063AC219BD1BB00B762C4 /* Union */,
 				2990639D219BC53A00B762C4 /* Pointers */,
 				29906399219BC26900B762C4 /* Loops */,
 				2990639A219BC27100B762C4 /* Types */,
@@ -158,6 +162,15 @@
 			path = Structs;
 			sourceTree = "<group>";
 		};
+		299063AC219BD1BB00B762C4 /* Union */ = {
+			isa = PBXGroup;
+			children = (
+				299063AD219BD1D400B762C4 /* Unions.h */,
+				299063AE219BD1D400B762C4 /* Unions.c */,
+			);
+			path = Union;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -215,6 +228,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				29906392219BB9C800B762C4 /* Types.c in Sources */,
+				299063AF219BD1D400B762C4 /* Unions.c in Sources */,
 				299063A3219BCC5600B762C4 /* ArrayOfPointers.c in Sources */,
 				299063A0219BC55200B762C4 /* Pointers.c in Sources */,
 				29906395219BBA6B00B762C4 /* Functions.c in Sources */,
