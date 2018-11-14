@@ -15,6 +15,7 @@
 		299063A0219BC55200B762C4 /* Pointers.c in Sources */ = {isa = PBXBuildFile; fileRef = 2990639F219BC55200B762C4 /* Pointers.c */; };
 		299063A3219BCC5600B762C4 /* ArrayOfPointers.c in Sources */ = {isa = PBXBuildFile; fileRef = 299063A2219BCC5600B762C4 /* ArrayOfPointers.c */; };
 		299063A7219BCDAB00B762C4 /* Strings.c in Sources */ = {isa = PBXBuildFile; fileRef = 299063A6219BCDAB00B762C4 /* Strings.c */; };
+		299063AB219BCFAB00B762C4 /* Structs.c in Sources */ = {isa = PBXBuildFile; fileRef = 299063AA219BCFAB00B762C4 /* Structs.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -46,6 +47,8 @@
 		299063A2219BCC5600B762C4 /* ArrayOfPointers.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ArrayOfPointers.c; sourceTree = "<group>"; };
 		299063A5219BCDAB00B762C4 /* Strings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Strings.h; sourceTree = "<group>"; };
 		299063A6219BCDAB00B762C4 /* Strings.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Strings.c; sourceTree = "<group>"; };
+		299063A9219BCFAB00B762C4 /* Structs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Structs.h; sourceTree = "<group>"; };
+		299063AA219BCFAB00B762C4 /* Structs.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Structs.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +83,7 @@
 			children = (
 				29221840219B5D800053C9A3 /* main.c */,
 				299063A4219BCD9A00B762C4 /* Strings */,
+				299063A8219BCF7F00B762C4 /* Structs */,
 				2990639D219BC53A00B762C4 /* Pointers */,
 				29906399219BC26900B762C4 /* Loops */,
 				2990639A219BC27100B762C4 /* Types */,
@@ -143,6 +147,15 @@
 				299063A6219BCDAB00B762C4 /* Strings.c */,
 			);
 			path = Strings;
+			sourceTree = "<group>";
+		};
+		299063A8219BCF7F00B762C4 /* Structs */ = {
+			isa = PBXGroup;
+			children = (
+				299063A9219BCFAB00B762C4 /* Structs.h */,
+				299063AA219BCFAB00B762C4 /* Structs.c */,
+			);
+			path = Structs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,6 +222,7 @@
 				29906398219BC26300B762C4 /* Arrays.c in Sources */,
 				29221841219B5D800053C9A3 /* main.c in Sources */,
 				2990638F219BB8E100B762C4 /* Loops.c in Sources */,
+				299063AB219BCFAB00B762C4 /* Structs.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
